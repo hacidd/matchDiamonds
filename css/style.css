@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+    background-color: #000900;
+    user-select: none;
+}
+
+.game {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.game__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	transform-origin: center;
+	width: 640px;
+	height: 480px;
+	background-image: url("/images/splashscreen.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.game__layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 210px;
+}
+.start-screen__button {
+    display: flex;
+    flex-grow: 0;
+    margin-top: 10px;
+    padding: 0;
+    border: 0;
+    background-image: url("/images/button-start.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 124px;
+    max-width: 363px;
+    height: 60px;
+    cursor: pointer;
+}
+.start-screen__button:hover {
+    background-image: url("/images/button-start-hover.png");
+}
+.start-screen__button--is-settings {
+background-image: url("/images/button-settings.png");
+}
+.start-screen__button--is-settings:hover {
+    background-image: url("/images/button-settings-hover.png");
+
+}

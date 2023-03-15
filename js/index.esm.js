@@ -1,0 +1,1 @@
+import {mainMenu } from './MainMenu.esm';
