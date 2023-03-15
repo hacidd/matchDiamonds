@@ -1,1 +1,1 @@
-import {mainMenu } from './MainMenu.esm';
+import {mainMenu } from './MainMenu.esm.js';
