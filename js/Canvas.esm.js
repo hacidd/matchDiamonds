@@ -18,7 +18,7 @@ class Canvas extends Common {
         this.context.canvas.width = CANVAS_WIDTH
         this.context.canvas.height = CANVAS_HEIGHT
         this.context.font = '20px Arial white'
-        this.context.fillStyle = 'white '
+        this.context.fillStyle = 'white'
     }
 }
 
