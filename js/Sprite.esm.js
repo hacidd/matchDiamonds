@@ -32,7 +32,7 @@ export class Sprite {
 			this.height * ratio
 		)
 
-		if (thix.alpha !== 255) {
+		if (this.alpha !== 255) {
 			canvas.context.globalAlpha = 1
 		}
 	}
