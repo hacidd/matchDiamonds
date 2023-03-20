@@ -5,8 +5,7 @@ import { canvas } from './Canvas.esm.js'
 import { Diamond } from './Diamond.esm.js'
 import { media } from './Media.esm.js'
 
-export const GAME_BOARD_X_OFFSET = 40
-export const GAME_BOARD_Y_OFFSET = 5
+
 
 const gameState = {
 	pointsToWin: 7000,
