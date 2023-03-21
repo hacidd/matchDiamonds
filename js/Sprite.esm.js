@@ -4,10 +4,10 @@ export class Sprite {
 	constructor(x, y, width, height, spritesImage, numberOfSprites = 1, offset = { x: 0, y: 0 }) {
 		this.alpha = 255
 		this.height = height
-		this.width = width
 		this.numberOfSprites = numberOfSprites
-		this.spritesImage = spritesImage
 		this.offset = { ...offset }
+		this.spritesImage = spritesImage
+		this.width = width
 		this.x = x
 		this.y = y
 	}
