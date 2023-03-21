@@ -11,8 +11,8 @@ class MainMenu extends Common {
 	constructor() {
 		super(START_SCREEN_ID)
 		this.bindToGameElements()
-        this.resizeGameWindow()
-        window.addEventListener("resize", this.resizeGameWindow)
+		this.resizeGameWindow()
+		window.addEventListener('resize', this.resizeGameWindow)
 	}
 
 	bindToGameElements() {
@@ -24,21 +24,20 @@ class MainMenu extends Common {
 	}
 
 	showLevelScreen() {
-        this.changeVisibilityScreen(this.element, HIDDEN_SCREEN)
-        this.changeVisibilityScreen(levelSelect.element, VISIBLE_SCREEN)
+		this.changeVisibilityScreen(this.element, HIDDEN_SCREEN)
+		this.changeVisibilityScreen(levelSelect.element, VISIBLE_SCREEN)
 		console.log('wybór poziomów')
 	}
 	showSettingsScreen() {
 		console.log('opcje gry')
 	}
 
-resizeGameWindow() {
-    const { innerWidth: width, innerHeight: height } = window;
-    const scale = Math.min(width / CANVAS_WIDTH, height / CANVAS_HEIGHT);
+	resizeGameWindow() {
+		const { innerWidth: width, innerHeight: height } = window
+		const scale = Math.min(width / CANVAS_WIDTH, height / CANVAS_HEIGHT)
 
-    document.documentElement.style.setProperty(SCALE_PROPERTY, scale)
-}
-
+		document.documentElement.style.setProperty(SCALE_PROPERTY, scale)
+	}
 }
 
 export const mainMenu = new MainMenu()
