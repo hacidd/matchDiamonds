@@ -26,6 +26,6 @@ export class GameState {
 	}
 
     get pointsToWin() {
-        return this.pointsToWin;
+        return this._pointsToWin;
     }
 }
