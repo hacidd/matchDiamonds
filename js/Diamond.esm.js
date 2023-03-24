@@ -35,3 +35,4 @@ export class Diamond extends Sprite {
         super.draw(this.kind, DIAMOND_ZOOM)
     }
 }
+

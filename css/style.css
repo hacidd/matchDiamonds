@@ -103,6 +103,7 @@ background-image: url("/images/button-settings.png");
     cursor: pointer;
 
 }
+
 .level-select__button:hover {
     background-image: url('/images/leveliconhover.png');
 }
