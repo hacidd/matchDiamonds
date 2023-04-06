@@ -1,4 +1,4 @@
-import { Common, VISIBLE_SCREEN } from './Common.esm'
+import { Common, VISIBLE_SCREEN } from './Common.esm.js'
 const RESULT_SCREEN_BACK_BUTTON_ID = 'js-back-to-levels'
 const RESULT_SCREEN_END_SCREEN_ID = 'js-end-screen'
 const RESULT_SCREEN_GAME_WIN_CLASS = 'end-screen--is-win'
@@ -9,8 +9,8 @@ const RESULT_SCREEN_USER_POINTS_ID = 'js-user-points'
 
 class ResultScreen extends Common {
 	constructor() {
-		super(RESULT_SCREEN_END_SCREEN_ID)
-		this.bindToElement()
+		super(RESULT_SCREEN_END_SCREEN_ID);
+		this.bindToElements();
 	}
 
 	bindToElements() {
@@ -32,10 +32,10 @@ class ResultScreen extends Common {
 			this.element.classList.remove(RESULT_SCREEN_GAME_WIN_CLASS)
 		}
 
-        this.changeVisibilityScreen(this.element, VISIBLE_SCREEN)
-        this.resultTextElement.textContent = isGameWin ? 'WYGRAŁEŚ!' : 'PRZEGRAŁEŚ!'
-        this.userPointsElement.textContent = String(playerPoints)
-        this.highScoresElement.textContent = 7000;
+		this.changeVisibilityScreen(this.element, VISIBLE_SCREEN)
+		this.resultTextElement.textContent = isGameWin ? 'WYGRAŁEŚ!' : 'PRZEGRAŁEŚ!';
+		this.userPointsElement.textContent = String(playerPoints)
+		this.highScoresElement.textContent = 7000
 	}
 }
 
