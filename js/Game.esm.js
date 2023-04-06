@@ -228,7 +228,7 @@ class Game extends Common {
 	}
 
 	checkEndOfGame() {
-		if (!this.gameState.getLeftMovement() && !this.gameState.getIsMoving() && !this.gameState.getIsSwaping) {
+		if (!this.gameState.getLeftMovement() && !this.gameState.getIsMoving() && !this.gameState.getIsSwaping()) {
 			const isPlayerWinner = this.gameState.isPlayerWinner()
 
 			if (isPlayerWinner && gameLevels[this.gameState.level]) {

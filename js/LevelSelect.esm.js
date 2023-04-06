@@ -3,18 +3,7 @@ import { canvas } from './Canvas.esm.js'
 import { DATALOADED_EVENT_NAME, loader } from './Loader.esm.js'
 import { game } from './Game.esm.js'
 import { media } from './Media.esm.js'
-
-const gameLevels = [
-    {
-        level: 1,
-    },
-    {
-        level: 2,
-    },
-    {
-        level: 3,
-    }
-]
+import { gameLevels } from './gameLevels.esm.js'
 
 const LEVEL_SELECT_BUTTON_ID = 'level-select__button'
 const LEVEL_SELECT_ID = 'js-level-select-screen'
