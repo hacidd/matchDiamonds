@@ -12,8 +12,14 @@ class LevelSelect extends Common {
 
     constructor() {
         super(LEVEL_SELECT_ID);
-        gameLevels.some(gameLevel => this.createButton(gameLevel.level))
+    }
 
+    createButtons() {
+while(this.element.firstChild) {
+    this.element.removeChild(this.element.firstChild)
+}
+
+        gameLevels.some(gameLevel => this.createButton(gameLevel.level))
     }
 
     createButton(value) {
