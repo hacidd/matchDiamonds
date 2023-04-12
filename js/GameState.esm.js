@@ -25,6 +25,10 @@ export class GameState {
 
 	}
 
+    get level () {
+        return this._level
+    }
+
     get pointsToWin() {
         return this._pointsToWin;
     }

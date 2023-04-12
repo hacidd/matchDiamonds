@@ -1,14 +1,19 @@
 import { DATALOADED_EVENT_NAME } from './Loader.esm.js'
 import { Common, VISIBLE_SCREEN } from './Common.esm.js'
-import { EMPTY_BLOCK, gameLevels, GAME_BOARD_X_OFFSET, GAME_BOARD_Y_OFFSET } from './gameLevels.esm.js'
+import { 
+	EMPTY_BLOCK,
+	gameLevels,
+	GAME_BOARD_X_OFFSET,
+	GAME_BOARD_Y_OFFSET, 
+} from './gameLevels.esm.js'
 import { canvas } from './Canvas.esm.js'
-
 import { media } from './Media.esm.js'
 import { GameState } from './GameState.esm.js'
 import { mouseController } from './MouseController.esm.js'
 import { DIAMOND_SIZE, NUMBER_OF_DIAMONDS_TYPES } from './Diamond.esm.js'
 import { resultScreen } from './ResultScreen.esm.js'
 import { userData } from './UserData.esm.js'
+import { mainMenu } from './MainMenu.esm.js'
 
 const DIAMONDS_ARRAY_WIDTH = 8
 const DIAMONDS_ARRAY_HEIGHT = DIAMONDS_ARRAY_WIDTH + 1 // with invisible first line
