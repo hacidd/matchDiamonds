@@ -28,7 +28,7 @@ class ResultScreen extends Common {
 		const restartButtonElement = this.bindToElement(RESULT_SCREEN_RESTART_LEVEL_BUTTON_ID)
 
 		backButtonElement.addEventListener('click', () => this.backButtonClick())
-		restartButtonElement.addEventListener('click', () => console.log('klik'))
+		restartButtonElement.addEventListener('click', () => this.restartLevelClick())
 	}
 
 	viewResultScreen(isGameWin, playerPoints, level) {
@@ -48,6 +48,11 @@ class ResultScreen extends Common {
 		this.changeVisibilityScreen(canvas.element, HIDDEN_SCREEN)
 		this.changeVisibilityScreen(this.element, HIDDEN_SCREEN)
 		mainMenu.showLevelScreen()
+	}
+
+	restartLevelClick() {
+		this.changeVisibilityScreen(this.element, HIDDEN_SCREEN);
+		levelSelect.loadLevel(game.gameState.level)
 	}
 
 }
